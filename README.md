@@ -3,5 +3,5 @@
 ## Getting Started Locally  
 
 * npm install
-* cd into frontend
+* cd into frontend folder
 * npm start  
