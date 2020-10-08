@@ -1,8 +1,9 @@
+/* Global Section */
 * { 
   margin: 0;
   /* remove invisible margin */
 }
-html{
+html {
   font-size: 1rem;
 }
 
@@ -13,8 +14,16 @@ body {
   margin: 0;
   height: 100vh;
 }
+a {
+  color:black;
+  text-decoration: none;
+}
 
-.grid-container{
+a:hover { 
+  color:orange;
+}
+
+.grid-container {
   display: grid;
   grid-template-areas: 
   'header'
@@ -24,6 +33,7 @@ body {
   grid-template-rows: 5rem 1fr 5rem;
   height: 100%;
 }
+
 header {
   grid-area: header;
   background-color: grey;
@@ -34,23 +44,65 @@ header {
   padding: 1rem;
   align-items: center;
 }
-header a{
+header a {
   margin: 1rem;;
   color: white;
   font-weight: bold;
   text-decoration: none;
 }
-header a:hover{
+
+header a:hover { 
   color: orange;
 }
-.brand{
+
+.brand {
   font-size: 1.5rem;
   flex: 1;
 }
-footer{
+
+footer {
   padding: 2rem;
   background-color: navy;
   display: flex;
   justify-content: center;
   color: white;
+}
+
+/* Products Section Start*/
+.products {
+ display: flex;
+ flex-wrap: wrap;
+ list-style-type: none;
+ justify-content: center;
+ margin: 0;
+ padding: 0;
+}
+
+.products li {
+  flex: 0 1 20rem;
+  margin: 1rem;
+  margin-bottom: 0;
+  height: 42rem;
+  border-top: 0.2rem green solid;
+} 
+.product {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ height: 100%;
+}
+.product img{
+  max-height: 26rem;
+  max-width: 22rem;
+  margin-top: 2rem;
+}
+.product-name {
+  line-height: 2.2rem;
+}
+.product-brand{
+  font-size: 1.2rem;
+  color: darkgray;
+}
+.product-price {
+  font-size:2rem;
 }
